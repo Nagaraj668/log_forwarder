@@ -30,7 +30,7 @@ def read_new_logs():
 
 
 def send_new_contents(new_contents):
-    url = 'http://www.w3schools.com/python/demopage.php'
+    url = 'http://samplesplunk/logs'
     data_to_splunk = {'logs': new_contents}
     req_object = requests.post(url, data=data_to_splunk)
     print(req_object.text)
